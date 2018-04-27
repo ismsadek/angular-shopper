@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule, HttpClient } from '@angular/common/http'
 
 
 import { AppComponent } from './app.component';
@@ -13,8 +14,9 @@ import { LoginComponent } from './login/login.component';
 import { SliderComponent } from './slider/slider.component';
 import { FeaturesItemsComponent } from './features-items/features-items.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
-import { PriceRangeComponent } from './price-range/price-range.component';
 import { AppRoutesModule } from './app-routes/app-routes.module';
+import { ProductsComponent } from './products/products.component';
+import { ProductsService } from './products.service';
 
 @NgModule({
   declarations: [
@@ -29,13 +31,15 @@ import { AppRoutesModule } from './app-routes/app-routes.module';
     SliderComponent,
     FeaturesItemsComponent,
     SidebarComponent,
-    PriceRangeComponent
+    ProductsComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutesModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
