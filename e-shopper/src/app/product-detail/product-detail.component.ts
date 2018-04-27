@@ -13,9 +13,10 @@ export class ProductDetailComponent implements OnInit {
   						private route: ActivatedRoute,
   						private router: Router){
   	let id = route.snapshot.params['id']
-  	this.products = productsService.getOneById(id).subscribe(
+  	this.products = productsService.getAll().subscribe(
   		data => { 
-  			this.products = data
+        this.products.filter( (item) => {return item.id == id})[0] || null  
+
   	});
   	if(this.products === null) router.navigate(['404']);
  }

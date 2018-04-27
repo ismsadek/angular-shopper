@@ -12,7 +12,7 @@ import { LoginComponent } from '../login/login.component';
 const appRoutes:Routes = [
 	{ path: '', component: HomeComponent },
 	{ path: 'contact', component: ContactComponent },
-	{ path: 'product-detail', component: ProductDetailComponent },
+	{ path: 'product-detail/:id', component: ProductDetailComponent },
 	{ path: 'login', component: LoginComponent },
 	{ path: '**', component: NotFoundComponent }
 ]

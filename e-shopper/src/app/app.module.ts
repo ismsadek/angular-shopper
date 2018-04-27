@@ -12,7 +12,6 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { LoginComponent } from './login/login.component';
 import { SliderComponent } from './slider/slider.component';
-import { FeaturesItemsComponent } from './features-items/features-items.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { AppRoutesModule } from './app-routes/app-routes.module';
 import { ProductsComponent } from './products/products.component';
@@ -29,7 +28,6 @@ import { ProductsService } from './products.service';
     ProductDetailComponent,
     LoginComponent,
     SliderComponent,
-    FeaturesItemsComponent,
     SidebarComponent,
     ProductsComponent,
     
