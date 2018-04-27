@@ -14,7 +14,7 @@ import { SliderComponent } from './slider/slider.component';
 import { FeaturesItemsComponent } from './features-items/features-items.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { PriceRangeComponent } from './price-range/price-range.component';
-
+import { AppRoutesModule } from './app-routes/app-routes.module';
 
 @NgModule({
   declarations: [
@@ -32,7 +32,8 @@ import { PriceRangeComponent } from './price-range/price-range.component';
     PriceRangeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutesModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
